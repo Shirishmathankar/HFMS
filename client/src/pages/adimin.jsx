@@ -18,9 +18,7 @@ export default function HospitalFoodManager() {
       case 'pantry':
         return <PantryManagement />
       case 'mealTracking':
-        return <MealTracking />
-      case 'logout':
-        return <Logout/>  
+        return <MealTracking /> 
       default:
         return <Dashboard />
     }
@@ -36,7 +34,7 @@ export default function HospitalFoodManager() {
                 <span className="text-2xl font-bold text-indigo-600">Hospital Food Manager</span>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                {['dashboard', 'patients', 'foodCharts', 'pantry', 'mealTracking','logout'].map((tab) => (
+                {['dashboard', 'patients', 'foodCharts', 'pantry', 'mealTracking'].map((tab) => (
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
