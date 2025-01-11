@@ -16,6 +16,11 @@ app.use(express.urlencoded({
 }))
 app.use(express.static("public"))
 app.use(cookieParser())
+app.use(express.static(path.join(__dirname,'/client/dist'))); 
+app.get('*',(req,res)=>{
+  res.sendFile(path.join(__dirname,'client','dist','index.html') )
+})
+
 import route from "./routes/auth.route.js";
 
 app.use("/api/v1/users",route)
