@@ -4,7 +4,7 @@ import PatientManagement from '../component/PateintManagement.jsx'
 import FoodChartCreation from '../component/FoodChartCreation.jsx'
 import PantryManagement from '../component/PantryManagement.jsx'
 import MealTracking from '../component/MealTracking.jsx'
-import Logout from '../component/logout.jsx'
+
 
 export default function HospitalFoodManager() {
   const [activeTab, setActiveTab] = useState('dashboard')
