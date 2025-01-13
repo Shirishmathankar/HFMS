@@ -29,7 +29,7 @@ import { useState } from "react";
          const data=await response.json();
           console.log(data)
           setPatients(data.data);
-
+    
       } catch (error) {
         console.error("Error fetching patient data:", error);
         setPatients([]); // Clear the patients list in case of an error
